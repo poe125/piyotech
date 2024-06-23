@@ -489,6 +489,21 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="../static/js/breakpoints.min.js"></script>
 			<script src="../static/js/util.js"></script>
 			<script src="../static/js/main.js"></script>
+			<h2>Contact Form</h2>
+    <form action="/send_message" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
 
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" required><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+
+        <input type="submit" value="Send Message">
+    </form>
 	</body>
 </html>
